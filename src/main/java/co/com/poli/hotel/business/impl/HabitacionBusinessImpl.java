@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package co.com.poli.daos.hotel.business.impl;
+package co.com.poli.hotel.business.impl;
 
 import co.com.poli.hotel.daos.IHabitacionDao;
-import co.com.poli.daos.hotel.business.IHabitacionBusiness;
+import co.com.poli.hotel.business.IHabitacionBusiness;
 import co.com.poli.hotel.models.Habitacion;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

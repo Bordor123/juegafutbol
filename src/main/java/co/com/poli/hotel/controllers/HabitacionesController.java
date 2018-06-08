@@ -5,7 +5,7 @@
  */
 package co.com.poli.hotel.controllers;
 
-import co.com.poli.daos.hotel.business.IHabitacionBusiness;
+import co.com.poli.hotel.business.IHabitacionBusiness;
 import co.com.poli.hotel.controllers.paths.HabitacionPaths;
 import co.com.poli.hotel.models.Habitacion;
 import org.springframework.beans.factory.annotation.Autowired;
