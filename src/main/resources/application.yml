@@ -1,0 +1,8 @@
+## YAML Template.
+---
+## YAML Template.
+---
+  server: 
+      port: 9540
+      servlet: 
+           context-path: /hotel
