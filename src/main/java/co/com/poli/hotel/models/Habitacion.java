@@ -23,6 +23,12 @@ public class Habitacion {
     public Habitacion() {
     }
 
+    public Habitacion(Integer idHabitacion) {
+        this.idHabitacion = idHabitacion;
+    }
+    
+    
+
     public Habitacion(Integer idHabitacion, Integer tipoHabitacion, Integer numCamas) {
         this.idHabitacion = idHabitacion;
         this.tipoHabitacion = tipoHabitacion;

@@ -19,7 +19,7 @@ public class HabitacionData {
     static {
         habitacionList = new ArrayList<Habitacion>() {
             {
-                add(new Habitacion(1, Habitacion.HABITACION_PRIVADA, 4));
+                add(new Habitacion(1, Habitacion.HABITACION_PRIVADA, 2));
             }
         };
     }

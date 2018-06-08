@@ -14,5 +14,6 @@ import co.com.poli.hotel.models.Habitacion;
 public interface IHabitacionBusiness {
     
     boolean Insertar(Habitacion habitacion);
+    double totalHabitacionesOcupadas();
     
 }

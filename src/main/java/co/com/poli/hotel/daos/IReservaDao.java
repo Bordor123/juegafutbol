@@ -6,6 +6,7 @@
 package co.com.poli.hotel.daos;
 
 import co.com.poli.hotel.models.Reserva;
+import java.util.ArrayList;
 
 /**
  *
@@ -15,5 +16,7 @@ public interface IReservaDao {
     
     public boolean insertar(Reserva reserva);
     public boolean existe(Reserva reserva);
+    public boolean verificarDisponibilidad(Integer idHabitacion);
+    public ArrayList<Reserva> obtenerReservasPorHabitacion(Integer idHabitacion);
     
 }

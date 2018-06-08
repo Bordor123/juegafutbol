@@ -6,6 +6,7 @@
 package co.com.poli.hotel.daos;
 
 import co.com.poli.hotel.models.Habitacion;
+import java.util.ArrayList;
 
 /**
  *
@@ -15,5 +16,7 @@ public interface IHabitacionDao {
     
     boolean Insertar(Habitacion habitacion);
     boolean existe(Habitacion habitacion);
+    Habitacion obtenerHabitacion(int idHabitacion);
+    ArrayList<Habitacion> obtenerHabitaciones();
     
 }

@@ -8,6 +8,7 @@ package co.com.poli.hotel.daos.impl;
 import co.com.poli.hotel.daos.IHabitacionDao;
 import co.com.poli.hotel.models.Habitacion;
 import data.HabitacionData;
+import java.util.ArrayList;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -15,8 +16,8 @@ import org.springframework.stereotype.Repository;
  * @author sala305
  */
 @Repository
-public class HabitacionDaoImpl implements IHabitacionDao{
-    
+public class HabitacionDaoImpl implements IHabitacionDao {
+
     @Override
     public boolean Insertar(Habitacion habitacion) {
         return HabitacionData.getHabitacionList().add(habitacion);
@@ -26,7 +27,18 @@ public class HabitacionDaoImpl implements IHabitacionDao{
     public boolean existe(Habitacion habitacion) {
         return HabitacionData.getHabitacionList().lastIndexOf(habitacion) != -1;
     }
+
+    @Override
+    public Habitacion obtenerHabitacion(int idHabitacion) {
+        Habitacion habitacion = new Habitacion(idHabitacion);
+        ArrayList<Habitacion> habitacioneList = HabitacionData.getHabitacionList();
+        return habitacioneList.get(habitacioneList.lastIndexOf(habitacion));
+    }
+
+    @Override
+    public ArrayList<Habitacion> obtenerHabitaciones() {
+        return HabitacionData.getHabitacionList();
+    }
     
-    
-    
+
 }

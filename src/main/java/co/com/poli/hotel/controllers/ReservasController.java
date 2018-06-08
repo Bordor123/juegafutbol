@@ -5,9 +5,9 @@
  */
 package co.com.poli.hotel.controllers;
 
-import co.com.poli.hotel.business.IHabitacionBusiness;
-import co.com.poli.hotel.controllers.paths.HabitacionPaths;
-import co.com.poli.hotel.models.Habitacion;
+import co.com.poli.hotel.business.IReservaBusiness;
+import co.com.poli.hotel.controllers.paths.ReservaPaths;
+import co.com.poli.hotel.models.Reserva;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,24 +21,20 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping(value = "/")
-public class HabitacionesController {
+public class ReservasController {
     
     @Autowired
-    private IHabitacionBusiness habitacionBusiness;
+    private IReservaBusiness reservaBusiness;
     
-    @PostMapping(HabitacionPaths.HABITACIONES)
-    public String insertarHabitacion(@RequestBody Habitacion habitacion) {
+    @PostMapping(ReservaPaths.HABITACIONES)
+    public String insertarReserva(@RequestBody Reserva reserva) {
         String result;
-        if (habitacionBusiness.Insertar(habitacion)) {
-            result = "Habitacion insertada";
+        if (reservaBusiness.insertar(reserva)) {
+            result = "Reserva insertada";
         } else {
-            result = "No se pudo insertar la habitacion";
+            result = "No se pudo insertar la reserva";
         }
         return result;
     }
     
-    @GetMapping(HabitacionPaths.HABITACIONES_TOTAL_PRIVADAS)
-    public Double obtenerTotal() {
-        return habitacionBusiness.totalHabitacionesOcupadas();
-    }
 }

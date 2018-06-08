@@ -9,9 +9,8 @@ package co.com.poli.hotel.controllers.paths;
  *
  * @author sala305
  */
-public class HabitacionPaths {
+public class ReservaPaths {
     
-    public final static String HABITACIONES = "/habitaciones";
-    public final static String HABITACIONES_TOTAL_PRIVADAS = "/habitaciones/totalprivadas";
+    public final static String HABITACIONES = "/reservas";
     
 }
