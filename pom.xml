@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>co.com.poli</groupId>
-	<artifactId>hotel</artifactId>
+	<artifactId>juegafutbol</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>hotel</name>
+	<name>juegafutbol</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -40,7 +40,19 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+                <dependency>
+                    <groupId>com.oracle</groupId>
+                    <artifactId>ojdbc6</artifactId>
+                    <version>11.2.0.3</version>
+                </dependency>
 	</dependencies>
+        
+        <repositories>
+            <repository>
+              <id>codelds</id>
+              <url>https://code.lds.org/nexus/content/groups/main-repo</url>
+            </repository>
+          </repositories>
 
 	<build>
 		<plugins>

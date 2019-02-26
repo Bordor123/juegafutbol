@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package co.com.poli.hotel.controllers;
+package co.com.poli.juegaFutbol.controllers;
 
+import co.com.poli.juegaFutbol.models.Reserva;
+import java.util.Date;
 import java.util.List;
 import javax.websocket.server.PathParam;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,8 +25,8 @@ public class TestController {
     
     
     @GetMapping("/test/{codigo}")
-    public int test(@PathVariable int codigo){
-        return codigo;
+    public Reserva test(@PathVariable int codigo){
+        return new Reserva(codigo, new Date(), new Date(), codigo, codigo, codigo);
     }
     
 }

@@ -5,4 +5,4 @@
   server: 
       port: 9540
       servlet: 
-           context-path: /hotel
+           context-path: /juegafutbol

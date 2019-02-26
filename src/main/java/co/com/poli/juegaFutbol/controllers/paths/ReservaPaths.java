@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package co.com.poli.hotel.controllers.paths;
+package co.com.poli.juegaFutbol.controllers.paths;
 
 /**
  *
  * @author sala305
  */
-public class HabitacionPaths {
+public class ReservaPaths {
     
-    public final static String HABITACIONES = "/habitaciones";
-    public final static String HABITACIONES_TOTAL_PRIVADAS = "/habitaciones/totalprivadas";
+    public final static String RESERVAS = "/reservas";
+    public final static String RESERVAS_ID = "/reservas/{idReserva}";
     
 }

@@ -1,12 +1,12 @@
-package co.com.poli.hotel;
+package co.com.poli.juegaFutbol;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HotelApplication {
+public class JuegaFutbolApp {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HotelApplication.class, args);
+		SpringApplication.run(JuegaFutbolApp.class, args);
 	}
 }
